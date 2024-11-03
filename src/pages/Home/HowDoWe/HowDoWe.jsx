@@ -26,7 +26,7 @@ const HowDoWe = () => {
                         aria-label="Discover"
                         onClick={() => setActiveTab('discover')}
                     >
-                        <img src={DiscoverSvg} alt="Discover icon" className="inline-block w-12 h-12 mr-5" />
+                        <img src={DiscoverSvg} alt="Discover icon" className="inline-block w-8 h-8 lg:mr-5 lg:w-12 lg:h-12" />
                         <span>Discover</span>
                     </label>
 
@@ -59,9 +59,9 @@ const HowDoWe = () => {
                     <div className='absolute w-full border top-[65px] -z-10'></div>
                 </div>
 
-                <div className="p-10 m-10 text-center">
+                <div className="py-5 my-5 text-center lg:p-10 lg:m-10">
                     {activeTab === 'discover' &&
-                        <div className='max-w-[70%] mx-auto leading-none'>
+                        <div className='lg:max-w-[70%] mx-auto leading-none'>
                             <h2 className='text-[32px] font-bold tracking-wider'>Discover</h2>
                             <h3 className='text-[27px] text-[#232e3d] font-thin mb-4'>We uncover insights.</h3>
                             <p className='text-lg leading-5 text-[#333]'>By analyzing existing resources, implementation experiences, and expert insights, we map best practices and gather valuable knowledge that informs the development of the Framework.</p>

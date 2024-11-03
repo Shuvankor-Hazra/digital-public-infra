@@ -6,11 +6,10 @@ import TextSlider from '../TextSlider/TextSlider'
 const Home = () => {
     return (
         <div>
-            <TextSlider />
             <WhyNow />
             <HowDoWe />
         </div>
     )
 }
 
-export default Home
+export default Home;
