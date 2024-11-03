@@ -8,7 +8,7 @@ const WhyNow = () => {
                 <div className='flex-1'>
                     <img src={WhyNowImg} alt="img" className='lg:pr-[100px]' />
                 </div>
-                <div className='flex-1 space-y-10'>
+                <div className='flex-1 space-y-10 text-center lg:text-left'>
                     <h2 className='text-[44px] uppercase leading-[36px] font-light'>
                         why <br />
                         <span className='font-bold'>now?</span>
