@@ -8,9 +8,9 @@ const Banner = () => {
         <Header />
       </div>
       <div className="bg-custom-gradient h-[700px] md:h-[850px] lg:h-[713px] w-full rounded-b-[96px]">
-        <div className="flex flex-col lg:flex-row justify-center items-center max-w-[1280px] mx-auto pt-20 px-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center max-w-[1280px] mx-auto pt-24 md:pt-28  px-10">
           <div className="flex-1 text-center lg:text-left z-50">
-            <h2 className="text-white font-bold text-[30px] md:text-[70px] leading-none">
+            <h2 className="text-white font-bold text-[30px] md:text-[55px] leading-none">
               The Universal DPI Safeguards Framework is live
             </h2>
             <p className="text-xl text-white mt-5">
@@ -19,14 +19,36 @@ const Banner = () => {
               individual and societal level, advance the Sustainable Development
               Goals and foster trust and equity across all countries.
             </p>
-            <div className="mt-10 flex flex-col lg:flex-row gap-5">
-              <button className="btn">
-                <span>Read The</span>
-                Guide to Framework
+            <div className="mt-10 flex flex-col lg:flex-row gap-5 items-center justify-center">
+              <button className=" bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-badge max-w-[320px] justify-between">
+                <div className="flex flex-col items-end justify-end">
+                  <span className="text-md">Read The</span>
+                  <span className="text-[18px] md:text-xl font-bold text-right">
+                    Guide to Framework
+                  </span>
+                </div>
+                <div>
+                  <img
+                    className="h-[40px]"
+                    src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
+                    alt=""
+                  />
+                </div>
               </button>
-              <button className="btn">
-                <span>Access The</span>
-                Safeguards Framework
+              <button className=" bg-[#fbb04c] px-5 py-2 flex items-center gap-3 rounded-badge justify-between max-w-[320px]">
+                <div className="flex flex-col items-end">
+                  <span className="text-sm lg:text-md">Access The</span>
+                  <p className="text-[18px] md:text-xl  font-bold text-right">
+                    Safeguards Framework
+                  </p>
+                </div>
+                <div>
+                  <img
+                    className="h-[40px]"
+                    src="https://cdn.prod.website-files.com/66436001b87a6ae0f7084d56/66436001b87a6ae0f7084da6_Play%20circle.svg"
+                    alt=""
+                  />
+                </div>
               </button>
             </div>
           </div>

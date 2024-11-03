@@ -1,13 +1,16 @@
 import React from "react";
 import HowDoWe from "../HowDoWe/HowDoWe";
 import WhyNow from "../WhyNow/WhyNow";
-import TextSlider from "../TextSlider/TextSlider";
+import GetInvolved from "../GetInvolved/GetInvolved";
+import Focus from "../Focus/Focus";
 
 const Home = () => {
   return (
     <div>
       <WhyNow />
-      {/* <HowDoWe /> */}
+      <Focus />
+      <HowDoWe />
+      <GetInvolved />
     </div>
   );
 };
