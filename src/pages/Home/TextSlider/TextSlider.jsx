@@ -1,18 +1,18 @@
-import React from "react";
-import "./TextSlider.css";
+import React from 'react';
+import './TextSlider.css';
+import CalImg from "../../../assets/icon-calender.png";
 
 const TextSlider = () => {
-  return (
-    <div className="text-slider-container">
-      <div className="text-slider">
-        <p>
-          🚨 Breaking News: Major updates in the tech world today! 🚨 | New
-          advancements in AI are changing industries! 🚨 | The latest in global
-          politics is here! 🚨 | Stock markets rally as inflation fears ease! 🚨
-        </p>
-      </div>
-    </div>
-  );
+    return (
+        <div className="text-slider-container">
+            <div className="text-slider">
+                <div className='flex items-center'>
+                    <img src={CalImg} alt="Calender Img" />
+                    <p>Upcoming Webinar on November 6, 2024! What's next: driving adoption of the Universal DPI Safeguards Framework - 🚨 Register here 🚨</p>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default TextSlider;

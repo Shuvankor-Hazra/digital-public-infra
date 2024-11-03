@@ -3,13 +3,13 @@ import WhyNowImg from "../../../assets/why-now.svg"
 
 const WhyNow = () => {
     return (
-        <div className='max-w-screen-xl w-[90%] py-10 mx-auto my-24'>
+        <div className='max-w-screen-xl w-[90%] py-10 mx-auto lg:my-20 my-10'>
             <div className='flex flex-col-reverse items-center justify-center gap-10 lg:flex-row lg:gap-0'>
                 <div className='flex-1'>
                     <img src={WhyNowImg} alt="img" className='lg:pr-[100px]' />
                 </div>
                 <div className='flex-1 space-y-10 text-center lg:text-left'>
-                    <h2 className='text-[44px] uppercase leading-[36px] font-light'>
+                    <h2 className='text-[30px] lg:text-[44px] uppercase leading-[36px] font-light'>
                         why <br />
                         <span className='font-bold'>now?</span>
                     </h2>

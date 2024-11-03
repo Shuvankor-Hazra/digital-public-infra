@@ -64,30 +64,30 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav items */}
-        <div className="hidden md:flex gap-5 items-center">
+        <div className="items-center hidden gap-5 md:flex">
           <ul className="flex gap-5">{navLinks}</ul>
 
           {/* Custom Hover Dropdown */}
           <div
-            className="relative hover:bg-white text-white hover:text-black rounded-lg"
+            className="relative text-white rounded-lg hover:bg-white hover:text-black"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-black p-1 border-2 border-white rounded-lg hover:rounded-none hover:rounded-t-lg">
+            <button className="p-1 border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
               <IoLanguage className="text-xl" />
             </button>
             {isDropdownOpen && (
-              <ul className="absolute right-0 w-40 bg-white text-black rounded-b-lg shadow-lg">
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+              <ul className="absolute right-0 w-40 text-black bg-white rounded-b-lg shadow-lg">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   English
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Español
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Français
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Arabic
                 </li>
               </ul>
@@ -97,7 +97,7 @@ const Header = () => {
 
         {/* Hamburger icon for mobile */}
         <div className="md:hidden" ref={mobileMenuRef}>
-          <button onClick={toggleMobileMenu} className="text-white text-2xl">
+          <button onClick={toggleMobileMenu} className="text-2xl text-white">
             {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
           </button>
         </div>
@@ -106,30 +106,30 @@ const Header = () => {
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <ul className="flex flex-col gap-2 bg-gray-800 p-4 text-center text-white">
+          <ul className="flex flex-col gap-2 p-4 text-center text-white bg-gray-800">
             {navLinks}
           </ul>
           <div
-            className="relative hover:bg-white text-white hover:text-black rounded-lg"
+            className="relative text-white rounded-lg hover:bg-white hover:text-black"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
             ref={dropdownRef}
           >
-            <button className="w-full hover:text-black p-1 mt-2 border-2 border-white rounded-lg hover:rounded-none hover:rounded-t-lg flex justify-center">
+            <button className="flex justify-center w-full p-1 mt-2 text-black bg-white border-2 border-white rounded-lg hover:text-black hover:rounded-none hover:rounded-t-lg">
               <IoLanguage className="text-xl" />
             </button>
             {isDropdownOpen && (
-              <ul className="absolute left-0 w-full bg-white text-black rounded-b-lg shadow-lg">
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+              <ul className="absolute left-0 z-50 w-full text-black bg-white rounded-b-lg shadow-lg">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   English
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Español
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Français
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
                   Arabic
                 </li>
               </ul>
